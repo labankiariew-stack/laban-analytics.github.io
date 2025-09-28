@@ -2,10 +2,11 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Laban Analytics</title>
+  <title>Laban Kiarie BI Analytics</title>
 </head>
 <body>
-  <h1>Welcome to Laban Analytics</h1>
+  <h1>Welcome to Laban Kiarie BI Analytics</h1>
   <p>This is my portfolio site where I’ll showcase dashboards and projects.</p>
 </body>
 </html>
+
