@@ -1,45 +1,85 @@
-html
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <title>Sales Dashboard - Laban Kiarie BI Analytics</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #1a5276;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    p {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #34495e;
+      margin-top: 40px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+    iframe {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+      width: 100%;
+      height: 600px;
+      margin-top: 15px;
+    }
+    hr {
+      margin: 50px 0;
+      border: none;
+      border-top: 1px solid #ccc;
+    }
+  </style>
 </head>
 <body>
   <h1>Sales Dashboard</h1>
-  <p>Interactive Power BI Sales Dashboard with 4 sections: Executive Summary, Profitability, Geospatial Analysis, and Notes.</p>
+  <p>
+    Interactive Power BI Sales Dashboard with 4 sections: 
+    <strong>Executive Sale Dashboard</strong>, <strong>Profitability Analysis</strong>, 
+    <strong>Geospatial Revenue Analysis</strong>, and <strong>Notes</strong>.
+  </p>
 
-<!-- 1️⃣ Executive Sales Dashboard -->
-<h2>Executive Sales Dashboard</h2>
-<iframe 
-src="https://app.powerbi.com/view?r=eyJrIjoiMDgxNDA0ZmUtMTBjYy00OTQ1LTkwMmQtMDkyNTA2OWIwNzViIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=6598127f64dae10c5a63"
-  width="100%" 
-  height="600" 
-  frameborder="0" 
-  allowFullScreen="true">
-</iframe>
-<hr>
-
+  <!-- 1️⃣ Executive Sales Dashboard -->
+  <h2>Executive Sales Dashboard</h2>
+  <iframe 
+    src="https://app.powerbi.com/view?r=eyJrIjoiMDgxNDA0ZmUtMTBjYy00OTQ1LTkwMmQtMDkyNTA2OWIwNzViIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=6598127f64dae10c5a63"
+    frameborder="0" allowFullScreen="true">
+  </iframe>
+  <hr>
 
   <!-- 2️⃣ Profitability Analysis -->
   <h2>Profitability Analysis</h2>
-  <iframe title="Profitability Analysis" width="100%" height="600"
-          src="https://app.powerbi.com/view?r=eyJrIjoiMDczNmI4ZjItODdjMi00N2VjLTlkZDAtNDVlOWY1MGUxYThlIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=6f29f2b78dc0d43e3505"
-          frameborder="0" allowFullScreen="true"></iframe>
+  <iframe 
+    src="https://app.powerbi.com/view?r=eyJrIjoiMDczNmI4ZjItODdjMi00N2VjLTlkZDAtNDVlOWY1MGUxYThlIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=6f29f2b78dc0d43e3505"
+    frameborder="0" allowFullScreen="true">
+  </iframe>
   <hr>
 
   <!-- 3️⃣ Geospatial Revenue Analysis -->
   <h2>Geospatial Revenue Analysis</h2>
-  <iframe title="Geospatial Revenue Analysis" width="100%" height="600"
-          src="https://app.powerbi.com/view?r=eyJrIjoiMDBmYWFiMTItMmZlNC00ZGY5LTg4NDAtYThmNDk5NTQ2ZGEyIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=a561138270a961de78b8"
-          frameborder="0" allowFullScreen="true"></iframe>
+  <iframe 
+    src="https://app.powerbi.com/view?r=eyJrIjoiMDBmYWFiMTItMmZlNC00ZGY5LTg4NDAtYThmNDk5NTQ2ZGEyIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=a561138270a961de78b8"
+    frameborder="0" allowFullScreen="true">
+  </iframe>
   <hr>
 
   <!-- 4️⃣ Notes -->
   <h2>Notes</h2>
-  <iframe title="Notes" width="100%" height="600"
-          src="https://app.powerbi.com/view?r=eyJrIjoiZjFhYmM1MDQtMGRhZi00ODM2LWJkYjctZDQ2YjY4ZjA1ZmUyIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=9bd44ce347cc4f3202a4"
-          frameborder="0" allowFullScreen="true"></iframe>
+  <iframe 
+    src="https://app.powerbi.com/view?r=eyJrIjoiZjFhYmM1MDQtMGRhZi00ODM2LWJkYjctZDQ2YjY4ZjA1ZmUyIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=9bd44ce347cc4f3202a4"
+    frameborder="0" allowFullScreen="true">
+  </iframe>
 
 </body>
 </html>
