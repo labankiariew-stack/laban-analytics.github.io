@@ -2,177 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sales Dashboard - Laban Kiarie BI Analytics</title>
   <style>
-    :root {
-      --primary: #004aad;
-      --secondary: #00aaff;
-      --light: #f9f9f9;
-      --dark: #333;
-      --gray: #444;
-      --white: #ffffff;
-      --shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    
-    * {
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
-      background: var(--light);
-      color: var(--dark);
+      background: #f9f9f9;
+      color: #333;
     }
-    
     header {
       text-align: center;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: var(--white);
+      background: linear-gradient(135deg, #004aad, #00aaff);
+      color: white;
       padding: 40px 20px;
-      position: relative;
-      overflow: hidden;
     }
-    
-    header::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23003a8c" fill-opacity="0.1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,202.7C672,203,768,181,864,165.3C960,149,1056,139,1152,149.3C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
-      background-size: cover;
-      background-position: bottom;
-    }
-    
-    .header-content {
-      position: relative;
-      z-index: 1;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    
-    .profile-img {
+    header img {
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      margin: 0 auto 20px;
-      border: 5px solid var(--white);
-      box-shadow: var(--shadow);
+      margin-bottom: 20px;
+      border: 5px solid white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
       object-fit: cover;
-      display: block;
     }
-    
     header h1 {
       margin: 10px 0;
       font-size: 2.5em;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
     }
-    
     header p {
       font-size: 1.2em;
       max-width: 700px;
       margin: 0 auto;
-      line-height: 1.8;
     }
-    
     section {
-      padding: 60px 20px;
+      padding: 40px 20px;
       text-align: center;
-      max-width: 1200px;
-      margin: 0 auto;
     }
-    
-    .section-title {
-      color: var(--primary);
-      margin-bottom: 20px;
-      font-size: 2em;
-      position: relative;
-      display: inline-block;
+    h2 {
+      color: #004aad;
+      margin-bottom: 15px;
     }
-    
-    .section-title::after {
-      content: '';
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 80px;
-      height: 4px;
-      background: var(--secondary);
-      border-radius: 2px;
-    }
-    
-    .section-description {
-      font-size: 1.1em;
-      color: var(--gray);
+    p {
+      font-size: 16px;
+      color: #444;
       max-width: 900px;
-      margin: 0 auto 30px;
-      line-height: 1.7;
+      margin: 0 auto 20px;
     }
-    
-    .dashboard-container {
-      background: var(--white);
-      border-radius: 10px;
-      box-shadow: var(--shadow);
-      padding: 20px;
-      margin-bottom: 40px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    .dashboard-container:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-    }
-    
     iframe {
       border: none;
       width: 100%;
-      height: 600px;
-      border-radius: 8px;
-    }
-    
-    hr {
-      border: 0;
-      height: 1px;
-      background: linear-gradient(to right, transparent, var(--secondary), transparent);
-      margin: 40px auto;
-      max-width: 1200px;
-    }
-    
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      background: var(--dark);
-      color: var(--white);
-      margin-top: 40px;
-    }
-    
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2em;
-      }
-      
-      header p {
-        font-size: 1em;
-      }
-      
-      .profile-img {
-        width: 150px;
-        height: 150px;
-      }
-      
-      .section-title {
-        font-size: 1.6em;
-      }
-      
-      iframe {
-        height: 400px;
-      }
+      height: 500px;
     }
   </style>
 </head>
@@ -180,86 +61,61 @@
 
   <!-- Fancy Intro Section -->
   <header>
-    <div class="header-content">
-      <img src="profile.jpg" alt="Laban Kiarie" class="profile-img">
-      <h1>Laban Kiarie</h1>
-      <p>
-        Helping organizations transform their data into actionable insights through 
-        <strong>Business Intelligence, Finance Automation, and Analytics Consulting</strong>.  
-        My dashboards empower leaders to make informed decisions, identify risks, and unlock opportunities.
-      </p>
-    </div>
+    <img src="profile.jpg.png" alt="Laban Kiarie">
+    <h1>Laban Kiarie</h1>
+    <p>
+      Helping organizations transform their data into actionable insights through 
+      <strong>Business Intelligence, Finance Automation, and Analytics Consulting</strong>.  
+      My dashboards empower leaders to make informed decisions, identify risks, and unlock opportunities.
+    </p>
   </header>
 
   <!-- Dashboard Section -->
   <section>
-    <h2 class="section-title">Sales Summary Dashboard</h2>
-    <p class="section-description">
+    <h2>Sales Summary Dashboard</h2>
+    <p>
       This Executive Sales Dashboard consolidates critical insights across sales performance, profitability, and market reach. 
       It enables leadership teams to monitor trends, assess outcomes, and identify areas requiring action in real time. 
       By aligning financial and operational data in one view, the dashboard supports confident, data-driven decision-making.
     </p>
-    <div class="dashboard-container">
-      <iframe src="YOUR_SALES_DASHBOARD_LINK"></iframe>
-    </div>
+    <iframe src="YOUR_SALES_DASHBOARD_LINK"></iframe>
   </section>
-  
   <hr>
 
   <!-- 1️⃣ Executive Summary -->
-  <section>
-    <h2 class="section-title">Executive Summary</h2>
-    <p class="section-description">This view provides a high-level overview of total revenue, growth trends, and key performance drivers.</p>
-    <div class="dashboard-container">
-      <iframe 
-        src="https://app.powerbi.com/view?r=eyJrIjoiMDgxNDA0ZmUtMTBjYy00OTQ1LTkwMmQtMDkyNTA2OWIwNzViIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=6598127f64dae10c5a63"
-        allowFullScreen="true">
-      </iframe>
-    </div>
-  </section>
-  
+  <h2>Executive Summary</h2>
+  <p>This view provides a high-level overview of total revenue, growth trends, and key performance drivers.</p>
+  <iframe 
+    src="https://app.powerbi.com/view?r=eyJrIjoiMDgxNDA0ZmUtMTBjYy00OTQ1LTkwMmQtMDkyNTA2OWIwNzViIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=6598127f64dae10c5a63"
+    width="100%" 
+    height="600" 
+    frameborder="0" 
+    allowFullScreen="true">
+  </iframe>
   <hr>
 
   <!-- 2️⃣ Profitability Analysis -->
-  <section>
-    <h2 class="section-title">Profitability Analysis</h2>
-    <p class="section-description">This dashboard highlights gross margins, cost drivers, and profitability trends to support financial strategy.</p>
-    <div class="dashboard-container">
-      <iframe title="Profitability Analysis"
-              src="https://app.powerbi.com/view?r=eyJrIjoiMDczNmI4ZjItODdjMi00N2VjLTlkZDAtNDVlOWY1MGUxYThlIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=6f29f2b78dc0d43e3505"
-              allowFullScreen="true"></iframe>
-    </div>
-  </section>
-  
+  <h2>Profitability Analysis</h2>
+  <p>This dashboard highlights gross margins, cost drivers, and profitability trends to support financial strategy.</p>
+  <iframe title="Profitability Analysis" width="100%" height="600"
+          src="https://app.powerbi.com/view?r=eyJrIjoiMDczNmI4ZjItODdjMi00N2VjLTlkZDAtNDVlOWY1MGUxYThlIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=6f29f2b78dc0d43e3505"
+          frameborder="0" allowFullScreen="true"></iframe>
   <hr>
 
   <!-- 3️⃣ Geospatial Revenue Analysis -->
-  <section>
-    <h2 class="section-title">Geospatial Revenue Analysis</h2>
-    <p class="section-description">This view reveals geographical revenue distribution, helping identify growth opportunities across regions.</p>
-    <div class="dashboard-container">
-      <iframe title="Geospatial Revenue Analysis"
-              src="https://app.powerbi.com/view?r=eyJrIjoiMDBmYWFiMTItMmZlNC00ZGY5LTg4NDAtYThmNDk5NTQ2ZGEyIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=a561138270a961de78b8"
-              allowFullScreen="true"></iframe>
-    </div>
-  </section>
-  
+  <h2>Geospatial Revenue Analysis</h2>
+  <p>This view reveals geographical revenue distribution, helping identify growth opportunities across regions.</p>
+  <iframe title="Geospatial Revenue Analysis" width="100%" height="600"
+          src="https://app.powerbi.com/view?r=eyJrIjoiMDBmYWFiMTItMmZlNC00ZGY5LTg4NDAtYThmNDk5NTQ2ZGEyIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=a561138270a961de78b8"
+          frameborder="0" allowFullScreen="true"></iframe>
   <hr>
 
   <!-- 4️⃣ Notes -->
-  <section>
-    <h2 class="section-title">Notes</h2>
-    <p class="section-description">This section allows executives to capture qualitative context and observations alongside the numbers.</p>
-    <div class="dashboard-container">
-      <iframe title="Notes"
-              src="https://app.powerbi.com/view?r=eyJrIjoiZjFhYmM1MDQtMGRhZi00ODM2LWJkYjctZDQ2YjY4ZjA1ZmUyIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=9bd44ce347cc4f3202a4"
-              allowFullScreen="true"></iframe>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2023 Laban Kiarie BI Analytics | Data-Driven Solutions for Business Growth</p>
-  </footer>
+  <h2>Notes</h2>
+  <p>This section allows executives to capture qualitative context and observations alongside the numbers.</p>
+  <iframe title="Notes" width="100%" height="600"
+          src="https://app.powerbi.com/view?r=eyJrIjoiZjFhYmM1MDQtMGRhZi00ODM2LWJkYjctZDQ2YjY4ZjA1ZmUyIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=9bd44ce347cc4f3202a4"
+          frameborder="0" allowFullScreen="true"></iframe>
 
 </body>
 </html>
