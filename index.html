@@ -4,62 +4,78 @@
   <meta charset="UTF-8">
   <title>Sales Dashboard - Laban Kiarie BI Analytics</title>
   <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
-    h1, h2 { color: #003366; }
-    .notes {
-      background: #f4f8fb;
-      border-left: 5px solid #007acc;
-      padding: 10px 15px;
-      margin-bottom: 15px;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
     }
-    iframe { margin-bottom: 40px; }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    p {
+      font-size: 16px;
+      color: #444;
+      max-width: 900px;
+    }
+    iframe {
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
-  <h1>Sales Dashboard</h1>
-  <p>Interactive Power BI Sales Dashboard with 4 sections: Executive Summary, Profitability, Geospatial Analysis, and Notes.</p>
+  <header>
+    <h1>Infolak Sales Dashboard</h1>
+    <img src="your-profile-photo.jpg" alt="Laban Kiarie">
+  </header>
+
+  <p>
+    Transforming sales data into board-level insights — enabling leadership to monitor performance, assess outcomes, 
+    and make confident, data-driven decisions in real time.
+  </p>
 
   <!-- 1️⃣ Executive Sales Dashboard -->
   <h2>Executive Sales Dashboard</h2>
-  <div class="notes">
-    <strong>Purpose:</strong> Provides leadership with a high-level view of overall performance (Revenue, Profit, Orders, Return Rates).<br>
-    <strong>Insights:</strong> Highlights trends vs targets and areas requiring deeper review.
-  </div>
+  <p>This view provides a high-level overview of total revenue, growth trends, and key performance drivers.</p>
   <iframe 
     src="https://app.powerbi.com/view?r=eyJrIjoiMDgxNDA0ZmUtMTBjYy00OTQ1LTkwMmQtMDkyNTA2OWIwNzViIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=6598127f64dae10c5a63"
-    width="100%" height="600" frameborder="0" allowFullScreen="true"></iframe>
+    width="100%" 
+    height="600" 
+    frameborder="0" 
+    allowFullScreen="true">
+  </iframe>
   <hr>
 
   <!-- 2️⃣ Profitability Analysis -->
   <h2>Profitability Analysis</h2>
-  <div class="notes">
-    <strong>Purpose:</strong> Tracks margins and cost structures across products and categories.<br>
-    <strong>Insights:</strong> Identifies profit drivers, cost leakages, and underperforming segments.
-  </div>
-  <iframe 
-    src="https://app.powerbi.com/view?r=eyJrIjoiMDczNmI4ZjItODdjMi00N2VjLTlkZDAtNDVlOWY1MGUxYThlIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=6f29f2b78dc0d43e3505"
-    width="100%" height="600" frameborder="0" allowFullScreen="true"></iframe>
+  <p>This dashboard highlights gross margins, cost drivers, and profitability trends to support financial strategy.</p>
+  <iframe title="Profitability Analysis" width="100%" height="600"
+          src="https://app.powerbi.com/view?r=eyJrIjoiMDczNmI4ZjItODdjMi00N2VjLTlkZDAtNDVlOWY1MGUxYThlIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=6f29f2b78dc0d43e3505"
+          frameborder="0" allowFullScreen="true"></iframe>
   <hr>
 
   <!-- 3️⃣ Geospatial Revenue Analysis -->
   <h2>Geospatial Revenue Analysis</h2>
-  <div class="notes">
-    <strong>Purpose:</strong> Provides visibility of revenue distribution by geography.<br>
-    <strong>Insights:</strong> Identifies strong regions, underperforming areas, and growth opportunities.
-  </div>
-  <iframe 
-    src="https://app.powerbi.com/view?r=eyJrIjoiMDBmYWFiMTItMmZlNC00ZGY5LTg4NDAtYThmNDk5NTQ2ZGEyIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=a561138270a961de78b8"
-    width="100%" height="600" frameborder="0" allowFullScreen="true"></iframe>
+  <p>This view reveals geographical revenue distribution, helping identify growth opportunities across regions.</p>
+  <iframe title="Geospatial Revenue Analysis" width="100%" height="600"
+          src="https://app.powerbi.com/view?r=eyJrIjoiMDBmYWFiMTItMmZlNC00ZGY5LTg4NDAtYThmNDk5NTQ2ZGEyIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=a561138270a961de78b8"
+          frameborder="0" allowFullScreen="true"></iframe>
   <hr>
 
   <!-- 4️⃣ Notes -->
   <h2>Notes</h2>
-  <div class="notes">
-    <strong>Purpose:</strong> Serves as a commentary and documentation section for management.<br>
-    <strong>Insights:</strong> Consolidates key findings, action points, and follow-ups.
-  </div>
-  <iframe 
-    src="https://app.powerbi.com/view?r=eyJrIjoiZjFhYmM1MDQtMGRhZi00ODM2LWJkYjctZDQ2YjY4ZjA1ZmUyIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=9bd44ce347cc4f3202a4"
-    width="100%" height="600" frameborder="0" allowFullScreen="true"></iframe>
+  <p>This section allows executives to capture qualitative context and observations alongside the numbers.</p>
+  <iframe title="Notes" width="100%" height="600"
+          src="https://app.powerbi.com/view?r=eyJrIjoiZjFhYmM1MDQtMGRhZi00ODM2LWJkYjctZDQ2YjY4ZjA1ZmUyIiwidCI6IjAzOGM2ZmJiLTE5NjQtNDFkMS04NjlkLTI5MDY0ZDgxYzE1MiJ9&pageName=9bd44ce347cc4f3202a4"
+          frameborder="0" allowFullScreen="true"></iframe>
+
 </body>
 </html>
